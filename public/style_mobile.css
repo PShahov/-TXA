@@ -182,17 +182,18 @@ img.right{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+
 }
 .social-list a{
-    width:20px;
-    height:20px;
+    width:30px;
+    height:30px;
     margin:0px 8px;
 }
 .social-list a img{
     display: block;
-    width:20px;
-    height:20px;
+    width:30px;
+    height:30px;
 }
 
 
@@ -384,4 +385,69 @@ h3{
 .roadmap ul{
     position: relative;
     left:-3.5em;
+}
+
+#faq strong{
+    display: block;
+    margin-top:2em;
+    font-size: 1.2em;
+}
+#faq p{
+    display: none;
+    padding-left:1em;
+}
+#faq strong.active + p{
+    display: block;
+}
+
+
+.mailer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.mailer input[type='text']{
+    border:2px solid white;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    color:white;
+    width:100%;
+
+    cursor:none;
+    padding: 5px;
+    padding-left: 10px;
+}
+.mailer input[type='text']::placeholder{
+    color:rgba(255, 255, 255, 0.719);
+    font-weight: 100;
+}
+.mailer span{
+    margin-left: 1em;
+    margin-top: 0.8em;
+    white-space: nowrap;
+}
+.mailer span:hover{
+    text-shadow: 0px 0px 5px white;
+}
+
+.privacy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 600px;
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+}
+.privacy > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.privacy a{
+    color:white;
+    text-decoration: none;
 }
