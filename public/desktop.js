@@ -596,7 +596,7 @@ window.addEventListener("load",()=>{
     var oilData = {
         datasets: [
             {
-                data: [90, 25, 65, 20, 20,70,10,50,7,3],
+                data: [5, 7, 20, 2, 5,5,6,10,19,1,20],
                 backgroundColor: [
                     "#ffffff1f"
                 ]
@@ -697,6 +697,7 @@ function sendEmail(){
         
         // выводим в консоль то что ответил сервер
         console.log( request.responseText );
+        document.getElementById("mailer-input").value = "";
         }
     });
     

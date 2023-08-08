@@ -3,7 +3,7 @@
     $text = htmlspecialchars($_GET["mail"]);
     
     $to      = 'hr@arabesque.aero';
-    $subject = 'Резюме';
+    $subject = 'Eria.world request';
     $message = $text;
     $headers = 'X-Mailer: PHP/' . phpversion();
     // $headers = 'From: webmaster@example.com' . "\r\n" .
@@ -11,6 +11,6 @@
     //     'X-Mailer: PHP/' . phpversion();
 
     echo mail($to, $subject, $message, $headers);
-    mail('bot@somedude.ru', $subject, $message, $headers);
+    mail('eriateam@eria.world', $subject, $message, $headers);
 
 ?>
